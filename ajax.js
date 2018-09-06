@@ -66,7 +66,7 @@ function fetch_data(){
 
 }
 
-setInterval(fetch_data,10);
+setInterval(fetch_data,1000);
 
 
 function playAudio() {
