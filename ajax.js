@@ -1,3 +1,5 @@
+var yes = true;
+
 $("#frm").click(function(){
 
 
@@ -62,11 +64,23 @@ function fetch_data(){
         $(".ex1").html(msg);
       }
   });
-  $(".ex1").scrollTop($(".ex1")[0].scrollHeight);
+  if(yes){
+  	$(".ex1").scrollTop($(".ex1")[0].scrollHeight);
+  }
+  
 
 }
 
-setInterval(fetch_data,1000);
+
+
+$(document).on({
+        mouseenter:function(){ yes = false; },
+        mouseleave:function(){yes = true; },
+    }, 
+   '.ex1'
+);
+
+setInterval(fetch_data,10);
 
 
 function playAudio() {
