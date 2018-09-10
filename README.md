@@ -1,6 +1,6 @@
 # ChatRoom-php:
 ## Features:
-1) Ajax refresh(100 milli second)
+1) Ajax refresh(1000 milli second)
 2) Message sound
 
 ### Images
